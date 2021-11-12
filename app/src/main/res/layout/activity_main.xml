@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="116dp">
+
+    <Button
+        android:id="@+id/bt_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_Registration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_Registration" />
+
+    <Button
+        android:id="@+id/bt_Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="117dp"
+        android:text="@string/registration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_LoginInsc"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="false"
+        android:text="Login:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_PasswordInsc"
+        app:layout_constraintEnd_toStartOf="@+id/et_Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ChatRpg" />
+
+    <EditText
+        android:id="@+id/et_Login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName|textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_LoginInsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_LoginInsc"
+        app:layout_constraintTop_toTopOf="@+id/tv_LoginInsc"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_PasswordInsc"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="16dp"
+        android:text="Password:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/et_Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_PasswordInsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_PasswordInsc"
+        app:layout_constraintTop_toTopOf="@+id/tv_PasswordInsc"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_ChatRpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:text="ChatRPG"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/et_Login"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
